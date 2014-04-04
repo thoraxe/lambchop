@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.license       = 'GPL-3.0'
   s.require_path = 'lib'
   s.add_development_dependency "rspec"
+  s.add_development_dependency "rake"
 end
