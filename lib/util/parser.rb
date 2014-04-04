@@ -1,5 +1,5 @@
 class Lambchop::Parser
-  def selinux_stanzas(file)
+  def self.selinux_stanzas(file)
     require 'selinux'
     parsed_context = parse_selinux_context(Selinux.lgetfilecon(file)[1])
 
@@ -10,7 +10,7 @@ class Lambchop::Parser
     dsl << "  seluser  => #{parsed_context[:seluser]}, \n"
   end
 
-  def parse_selinux_context(context)
+  def self.parse_selinux_context(context)
 
     if context.nil? or context == "unlabeled"
       return nil
