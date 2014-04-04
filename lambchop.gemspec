@@ -1,6 +1,10 @@
+$:.push File.expand_path("../lib", __FILE__)
+require "lambchop/version"
+
 Gem::Specification.new do |s|
   s.name          = 'lambchop'
-  s.version       = '0.2.0'
+  s.version       = Lambchop.version
+  s.platform      = Gem::Platform::RUBY
   s.summary       = "Create puppet DSL from arbitrary files."
   s.description   = "You shouldn't have to learn Puppet's DSL just to generate a manifest for a single config file. Lambchop automates that for you."
   s.authors       = ["Erik M Jacobs"]
