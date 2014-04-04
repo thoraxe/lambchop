@@ -1,4 +1,4 @@
-class Lambchop::Parser
+module Lambchop::Parser
   def self.selinux_stanzas(file)
     require 'selinux'
     parsed_context = parse_selinux_context(Selinux.lgetfilecon(file)[1])

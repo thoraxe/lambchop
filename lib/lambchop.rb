@@ -1,4 +1,4 @@
-class Lambchop
+module Lambchop
 
   require 'util/parser'
 
