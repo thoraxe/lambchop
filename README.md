@@ -5,5 +5,6 @@ correct Puppet DSL SELinux stanzas.
 
 # Future
 1. Take more than one file as input.
-2. Output the complete structure for a Puppet module and turn the input file(s).
+2. Output the complete structure for a Puppet module and turn the input file(s)
+into (a) template(s).
 3. Package the resulting Puppet module.
